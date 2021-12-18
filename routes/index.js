@@ -1,5 +1,9 @@
+const authRouter = require('./auth');
+
 module.exports = (app) => {
-    // Routes
+
+    app.use('/auth', authRouter);
+
     app.get('/', (req, res, next) => {
         res.send("Welcome to the home page ");
         const host = req.get("Host");
@@ -11,5 +15,5 @@ module.exports = (app) => {
         console.log(req.query);
 
         res.send("Welcome to the user page after nodemon");
-    })
+    });
 };
