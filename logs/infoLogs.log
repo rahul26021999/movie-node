@@ -1,1 +1,5 @@
 {"level":"info","message":"hello"}
+{"level":"info","message":"hello"}
+{"level":"info","message":"\u001b[0mGET /auth/login \u001b[36m304\u001b[0m 6.488 ms - -\u001b[0m\n"}
+{"level":"info","message":"hello"}
+{"level":"info","message":"::1 - - [18/Dec/2021:18:39:29 +0000] \"GET /auth/login HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36\"\n"}
