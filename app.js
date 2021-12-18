@@ -4,16 +4,15 @@ const app = express();
 
 // Routes
 app.get('/', (req, res, next) => {
-    // res.status(200).send("Welcome to the home page ");
-
-    // res.json({
-    //     message: "Welcome to the homepage"
-    // });
-    res.redirect("/user");
-
+    res.send("Welcome to the home page ");
+    const host = req.get("Host");
+    console.log(host);
 });
 
-app.get('/user', (req, res, next) => {
+app.get('/user/:id/:postId', (req, res, next) => {
+    console.log(req.params);
+    console.log(req.query);
+
     res.send("Welcome to the user page after nodemon");
 })
 
